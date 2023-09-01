@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FORM REGISTER SANTRI</title>
+</head>
+
+<body bgcolor="#D8D9DA">
+    <table align="center" width="40%" cellpadding="15">
+        <thead>
+            <tr bgcolor="#2D4356">
+                <th colspan="2">FORM REGISTER SANTRI</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr bgcolor="#2D4356">
+                <th colspan="2">
+                    <input type="submit" name="save" value="Save" /> &nbsp; &nbsp;
+                    <input type="reset" name="no" value="No" />
+                </th>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td width="25%">Nama Lengkap</td>
+                <td>
+                    <input type="text" name="nama" size="30" />
+                </td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>
+                    <input type="password" name="password" size="30" />
+                </td>
+            </tr>
+            <tr>
+                <td>Tetala</td>
+                <td>
+                    <input type="text" name="Tetala" size="2">/
+                    <input type="text" name="Tetala" size="2">/
+                    <input type="text" name="Tetala" size="2"> (hh/bb/tt)
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">Kamar</td>
+                <td>
+                    <input type="checkbox" name="Kamar" value="Blok C.04" />Blok C.04
+                    <input type="checkbox" name="Kamar" value="Blok D.11" />Blok D.11
+                    <input type="checkbox" name="Kamar" value="Blok B.05" checked />Blok B.05<br/>
+                    <input type="checkbox" name="Kamar" value="Blok J.07" />Blok J.07
+                    <input type="checkbox" name="Kamar" value="Blok A.10" />Blok A.10
+                    <input type="checkbox" name="Kamar" value="Lainnya" />Lainnya
+                </td>
+            </tr>
+            <tr>
+                <td>Tingkat Pendidikan</td>
+                <td>
+                    <select name="pendidikan">
+                        <option value="">-- Pilih Pendidikan Akhir--</option>
+                        <option value="SD">SD</option>
+                        <option value="SMP">SMP</option>
+                        <option value="SMA">SMA</option>
+                        <option value="Mahasiswa" selected>Mahasiswa</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">Alamat</td>
+                <td>
+                    <textarea name="alamat" cols="50" rows="5"></textarea>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

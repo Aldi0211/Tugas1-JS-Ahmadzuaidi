@@ -1,0 +1,157 @@
+h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    font-family: Goudy Stout, cambria, verdana, tahoma, calibri;
+    color: #1D5B79;
+    text-shadow: 2px 2px 5px rgb(8, 142, 175);
+}
+
+body {
+    background-image: url('../images/bootcamp_css.png');
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #272829;
+    /*
+	margin-left:2cm;
+	margin-right:2cm;
+	*/
+    /* margin:0.5cm 3cm;  pasangan 0,5 atas bawah 2 kiri kanan */
+    margin: 1cm 2cm 1cm 5cm;
+    /*searah jarum jam mulai dari atas */
+}
+
+legend,
+fieldset {
+    border: 10px outset #1f3141;
+    border-radius: 30px;
+    color: #DDE6ED;
+    background-color: #838b79;
+    padding: 10px;
+    background-image: linear-gradient(to right, #27374D, #526D82, #4ea2a8, #9DB2BF);
+}
+
+p,
+li,
+h3 {
+    text-align: justify;
+    color: #CEDEBD;
+    line-height: 25px;
+    font-size: 14pt;
+}
+
+p.p6 {
+    color: #DDE6ED;
+    text-align: justify;
+    text-indent: 0;
+}
+
+ul#pemrograman {
+    list-style-type: square;
+}
+
+ul#office {
+    list-style-type: disc;
+}
+
+ol.python {
+    list-style-image: url('../images/jempol.gif');
+}
+
+.kursus {
+    list-style-type: lower-alpha;
+}
+
+div#menu {
+    text-align: center;
+}
+
+
+/*---------------pseudo class-----------------*/
+
+a:link,
+a:visited {
+    font-weight: bold;
+    text-decoration: none;
+    color: #183D3D;
+    border: 2px solid #183D3D;
+    background-color: #DDE6ED;
+    padding: 5px;
+}
+
+a:hover {
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(223, 219, 233);
+    border: 2px dashed black;
+    background-color: #183D3D;
+}
+
+a.link_gambar:link,
+a.link_gambar:visited {
+    text-decoration: none;
+    color: none;
+    border-width: 0px;
+    background-color: #272829;
+}
+
+a.link_gambar:hover {
+    text-decoration: none;
+    border-width: 0px;
+    color: none;
+    background-color: #272829;
+}
+
+
+/*------------------pseudo element---------------------*/
+
+.p5::first-letter {
+    text-indent: 0;
+    font-size: 50pt;
+    color: rgb(197, 197, 202);
+    float: left;
+}
+
+.p5::first-line {
+    text-indent: 0;
+    color: rgb(30, 102, 95);
+    font-style: italic;
+}
+
+
+/*----------belajar css advance-------------*/
+
+@font-face {
+    font-family: myBackyard;
+    src: url('spicypotatos.otf');
+}
+
+* {
+    /* universal untuk seluruh selector */
+    font-family: myBackyard;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 220px;
+    background-color: green;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
